@@ -1,11 +1,13 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}New Todolist{% endblock %}
+{% block title %}New Todolist{% endblock %} 
 
 {% block body %}
-    <h1>Create new Todolist</h1>
+
+    <h1 class="TitleNew">CREA TU NUEVA TAREA</h1>
+    <div class='formulario'>
 
     {{ include('todolist/_form.html.twig') }}
 
-    <a href="{{ path('app_todolist_index') }}">back to list</a>
+    </div>
 {% endblock %}

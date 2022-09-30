@@ -1,4 +1,13 @@
+{% block body %}
+
+<div class='formulario-1'>
 {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button class="btn">{{ button_label|default('Save') }}</button>
+
+{{ form_widget(form) }}
+
+<div class='guardar'>
+    <button class="btn">{{ button_label|default('Guardar') }}</button>
+</div>
+</div>
 {{ form_end(form) }}
+{% endblock %}

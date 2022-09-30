@@ -1,43 +1,51 @@
 {% extends 'base.html.twig' %}
 
-
-{% block title %}Todolist{% endblock %}
-
 {% block body %}
-    <h1>Todolist</h1>
+    <h1 class="TitleNew">{{ todolist.title }}</h1>
 
-    <table class="table">
-        <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ todolist.id }}</td>
-            </tr>
-            <tr>
-                <th>Title</th>
-                <td>{{ todolist.title }}</td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>{{ todolist.description }}</td>
-            </tr>
-            <tr>
-                <th>Location</th>
-                <td>{{ todolist.location }}</td>
-            </tr>
-            <tr>
-                <th>Date</th>
-                <td>{{ todolist.date ? todolist.date|date('Y-m-d') : '' }}</td>
-            </tr>
-            <tr>
-                <th>Time</th>
-                <td>{{ todolist.time ? todolist.time|date('H:i:s') : '' }}</td>
-            </tr>
-        </tbody>
-    </table>
+<div class='formulario-2'>
+    <div class='formulario2'>
+        <table class="table">
+            <tbody>
+                <tr class='tableTr'>
+                    <th>Title</th>
+                    <td>{{ todolist.title }}</td>
+                </tr>
+                <tr class='tableTr'>
+                    <th>Description</th>
+                    <td>{{ todolist.description }}</td>
+                </tr>
+                <tr class='tableTr'>
+                    <th>Location</th>
+                    <td>{{ todolist.location }}</td>
+                </tr>
+                <tr class='tableTr'>
+                    <th>Date</th>
+                    <td>{{ todolist.date ? todolist.date|date('Y-m-d') : '' }}</td>
+                </tr>
+                <tr class='tableTr'>
+                    <th>Time</th>
+                    <td>{{ todolist.time ? todolist.time|date('H:i:s') : '' }}</td>
+                </tr>
+                <tr class='tableTr'>
+                    <th>Categoria</th>
+                    <td>{{ todolist.category }}</td>
+                </tr>
+                <tr class='tableTr'>
+                    <th>Importante</th>
+                    <td>{{ todolist.CategoryImportant ? todolist.CategoryImportant : 'No marcada como importante' }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
 
-    <a href="{{ path('app_todolist_index') }}">back to list</a>
+    {# <a href="{{ path('app_todolist_index') }}">back to list</a> #}
 
-    <a href="{{ path('app_todolist_edit', {'id': todolist.id}) }}">edit</a>
-
+    <div class="action-btn">
+    <a class="edit-btn" href="{{ path('app_todolist_edit', {'id': todolist.id}) }}">
+    <img src="./media/editar.png">
+    </a>
     {{ include('todolist/_delete_form.html.twig') }}
+    </div>
 {% endblock %}
