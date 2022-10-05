@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <h1 class="TitleNew">{{ todolist.title }}</h1>
+    <div class='formulario'>
+
+    <div class='trash'>
+
+    {{ include('todolist/_delete_form.html.twig') }}
+
+    </div>
+
+    {{ include('todolist/_form.html.twig') }}
+
+    </div>
+
+{% endblock %}

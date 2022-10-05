@@ -13,7 +13,7 @@ use Symfony\Component\Routing\Annotation\Route;
 #[Route('/')]
 class TodolistController extends AbstractController
 {
-    #[Route('/', name: 'app_todolist_index', methods: ['GET'])]
+    #[Route('/tasks', name: 'app_todolist_index', methods: ['GET'])]
     public function index(TodolistRepository $todolistRepository): Response
     {
         return $this->render('todolist/index.html.twig', [
@@ -60,7 +60,7 @@ class TodolistController extends AbstractController
             return $this->redirectToRoute('app_todolist_index', [], Response::HTTP_SEE_OTHER);
         }
 
-        return $this->renderForm('todolist/edit.html.twig', [
+        return $this->renderForm('todolist/edit_list.html.twig', [
             'todolist' => $todolist,
             'form' => $form,
         ]);

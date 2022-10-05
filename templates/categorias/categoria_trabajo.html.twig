@@ -1,0 +1,62 @@
+{# {% extends 'base.html.twig' %} #}
+{% extends 'base_categoria.html.twig' %}
+
+{% block title %}Todolist index{% endblock %}
+
+{% block categorias %}
+
+{% endblock %}
+
+{% block body %}
+
+   <div>Hola</div>
+
+{% endblock %}
+
+
+{#  
+
+<h1 class="TitleNew">{{ todolist.category }}</h1>
+
+<div class='formHome'>
+    
+        <table class="table-home">
+            <tbody class='tabla-task-row'>
+            {% for todolist in todolists %}
+
+    
+                <tr class='task'>
+                    <td class='campo'><strong>{{ todolist.category }}</strong><span class='tarea-titulo'>{{ todolist.title }}</span></td>
+
+                    <td class='campo'>{{ todolist.description }}</td>
+
+                    <td class='campo'>{{ todolist.date ? todolist.date|date('Y-m-d') : '' }}</td>
+                    
+                {# </tr>
+
+                <tr> #}
+                    {# <td class='task-btn'>
+
+                        <a  href="{{ path('app_todolist_show', {'id': todolist.id}) }}"><img class='task-actions' src='./media/show.png'></a>
+
+                        <a href="{{ path('app_todolist_edit', {'id': todolist.id}) }}"><img class='task-actions' src='./media/editar.png'></a>
+
+                        <a class='delete-task task-actions'>{{ include('todolist/_delete_task.html.twig') }}
+                        </a>     
+                    </td>
+                </tr>
+            
+            {% else %}
+                <tr>
+                    <td colspan="7">Aun no tienes tareas pendientes ¡Escribe una!</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+</div> #}
+    {# <div class='more'>
+    <a href="{{ path('app_todolist_new') }}"><svg width="196" height="121" viewBox="0 0 51 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M49.5 21.5C49.5 32.316 39.0049 41.5 25.5 41.5C11.9951 41.5 1.5 32.316 1.5 21.5C1.5 10.684 11.9951 1.5 25.5 1.5C39.0049 1.5 49.5 10.684 49.5 21.5Z" fill="#C68DFE" stroke="#C68DFE" stroke-width="3"/>
+    <path d="M37.4729 21.488H27.2135V12H25.2594V21.488H15V23.2953H25.2594V32.7833H27.2135V23.2953H37.4729V21.488Z" fill="#3A3A3C"/>
+    </svg></a>
+    </div> #}

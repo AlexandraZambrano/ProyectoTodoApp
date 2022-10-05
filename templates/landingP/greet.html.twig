@@ -1,0 +1,20 @@
+{% extends 'landing.html.twig' %}
+
+{% block body %}
+    <div class="card-greet text-center">
+    <div class="card-body">
+        <p class="card-text">
+        Procrastinar se ha vuelto parte de nuestro día a día, y pocos saben como combatirlo; es por ello que 2B-Planned existe, para ayudarte.
+        Con su sistema de categorías por tarea y fácil interfaz, ¡serás capaz de manejar tu tiempo sin esfuerzo!
+        2B-Planned no es solo planear sino ejecutar.
+        </p>
+
+        <div class='btn-title'>
+            <h1 class="title-card">¿TE ANIMAS A <br> PLANIFICAR TU DIA?</h1>
+            <div class='btn-greet'> 
+                <a href="{{ path('app_todolist_index') }}" class="btn greet">Comenzar</a>
+            </div>
+        <div>
+    </div>
+    </div>
+{% endblock %}

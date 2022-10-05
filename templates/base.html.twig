@@ -2,20 +2,37 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="build/app.css">
-        {# <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>"> #}
-        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href= {{ asset('build/app.css') }}>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     </head>
     <body>
-    {% block volver %}<a href="{{ path('app_todolist_index') }}"><svg class="btn-volver" width="70" height="67" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+  <div><a href="{{ path('app_todolist_index') }}"><svg class="btn-volver" width="70" height="67" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14 0C6.26803 0 0 6.04412 0 13.5C0 20.9559 6.26803 27 14 27C21.732 27 28 20.9558 28 13.5C28 6.04417 21.732 0 14 0ZM22.5795 21.7731C20.4521 23.8184 17.6112 25.0266 14.6104 25.1624C11.6096 25.2981 8.66383 24.3517 6.34714 22.5075C4.03046 20.6633 2.50878 18.0535 2.07862 15.1865C1.64846 12.3195 2.34064 9.40081 4.02027 6.99908C5.6999 4.59735 8.24666 2.88464 11.1643 2.19469C14.082 1.50474 17.1615 1.88697 19.8029 3.2669C22.4442 4.64684 24.4582 6.92561 25.4524 9.65921C26.4465 12.3928 26.3496 15.3854 25.1806 18.0539C24.5713 19.4442 23.6879 20.7073 22.5795 21.7731Z" fill="#3A3A3C"/>
 <path d="M14.9692 8.37815L13.6492 7.10538L7.01782 13.4999L13.6492 19.8945L14.9692 18.6217L10.591 14.3999H21.525V12.5999H10.591L14.9692 8.37815Z" fill="#3A3A3C"/>
-</svg></a>{% endblock %} 
+</svg></a></div>
+    <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    {% block logo %}
-    <div class='logo'>
-        <svg width="700" height="350" viewBox="0 0 390 106" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+{% block logo %}
+  <div class='logo'>
+    <svg width="700" height="350" viewBox="0 0 390 106" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <rect x="-5" width="395" height="106" fill="url(#pattern0)"/>
         <defs>
         <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -31,7 +48,8 @@
         
         {% endblock %}
 
-            
+
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     </body>
 
         {% block javascripts %}

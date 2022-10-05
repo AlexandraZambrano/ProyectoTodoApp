@@ -1,9 +1,7 @@
-<div class='formulario'>
-<form method="post" action="{{ path('app_todolist_delete', {'id': todolist.id}) }}" onsubmit="return confirm('Are you sure you want to delete this item?');">
+<form method="post" action="{{ path('app_todolist_delete', {'id': todolist.id}) }}" onsubmit="return confirm('¿Estas segura que quieres eliminar esta tarea?');">
     <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ todolist.id) }}">
 
     <button class="borrar">
-    <img src="./media/borrar_1.png">
+    <img class='task-actions' src={{asset('./media/borrar(2).png') }}>
     </button>
 </form>
-</div>
