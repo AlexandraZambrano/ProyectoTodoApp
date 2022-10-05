@@ -1,0 +1,561 @@
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[1].use[1]!./assets/styles/app.css ***!
+  \**************************************************************************************************************/
+  *{
+    margin: 0;
+    padding: 0;
+    size: border-box;
+}
+
+
+
+@media screen and (min-width: 390px) and (min-height: 844px) {
+  body {
+    background-color: rgb(255, 255, 255);
+    color: #3A3A3C;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100vh;
+    font-size: 40px;
+  }
+
+  img, svg {
+    margin-top: 20px;
+    vertical-align: inherit;
+  }
+
+  .btn-volver{
+    margin-left: 28px;
+  }
+
+  .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .task-actions{
+    width: 65px;
+    margin-right: 25px;
+  }
+
+  .delete{
+    background-color: transparent;
+    border: none;
+  }
+
+
+  /*LANDING PAGE */
+  .card-greet {
+    background-color: #CBE957;
+    border-top-left-radius: 130px;
+    border-top-right-radius: 130px;
+    height: 64vh;
+    line-height: 170%;
+    padding-top: 40px;
+    margin-top: 48px;
+  }
+
+  .title-card {
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: 180px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+
+  .btn-greet{
+    margin-top: 80px;
+    margin-right: 0;
+    margin-top: 75px;
+  }
+
+  .card-text{
+      margin-left: 57px;
+      margin-right: 54px;
+      margin-top: 84px;
+  }
+  /*FIN LANDING PAGE*/
+
+
+  /*NAVBAR*/
+
+  .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+
+  .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: self-end;
+    text-align: right;
+}
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: self-end;
+  text-align: right;
+  font-size: 40px;
+}
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: self-end;
+  text-align: right;
+  font-size: 40px;
+}
+
+.navbar-toggler-icon {
+  display: none;
+  width: 3.5em;
+  height: 5.5em;
+  vertical-align: middle;
+  background-image: var(--bs-navbar-toggler-icon-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.navbar-toggler {
+  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+  font-size: var(--bs-navbar-toggler-font-size);
+  line-height: 1;
+  color: var(--bs-navbar-color);
+  background-color: transparent;
+  border: var(--bs-border-width) var(--bs-navbar-toggler-);
+  border-radius: var(--bs-navbar-toggler-border-radius);
+  transition: var(--bs-navbar-toggler-transition);
+}
+  /*FIN NAVBAR*/
+
+  /*Search-Bar*/
+
+  .d-flex {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+  .form-control {
+    display: flex;
+    width: 90%;
+    padding: 1.375rem 0.75rem;
+    font-size: 40px;
+    padding-left: 150px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #3A3A3C;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.icon-search {
+  width: 88px;
+  margin-left: 70px;
+  position: absolute;
+  }
+  /*end Searchbar*/
+
+  /* INICIO INDEX*/
+  .todo-title{
+    margin-left: 30PX;
+  }
+
+  .col {
+    padding-top: 40px;
+}
+  /* FIN INDEX*/
+
+  /* Inicio SECTION NEW*/
+
+.TitleNew{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+  }
+
+  .formulario{
+        
+        font-size: 50px;
+        width: 100%;
+    }
+
+  .formulario-1 {
+        background-color: #CBE957;
+        opacity: 85%;
+        margin-left: 20px;
+        margin-right: 20px; 
+        border-radius: 15px;
+        padding-top: 100px;
+        padding-bottom: 90px;  
+    }
+
+  #todolist_title{
+    width: 70%;
+    font-size: 40px;
+    height: 70px;
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 30px;
+    margin-left: 115px;
+    justify-content: center;
+    background-color: #F4F4F4;
+    border-radius: 20px;
+    border-color:#F4F4F4;
+    padding-left: 30px;
+  }
+
+
+  #todolist_description{
+    width: 70%;
+    height: 150px;
+    font-size: 40px;
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 30px;
+    margin-left: 115px;
+    justify-content: center;
+    background-color: #F4F4F4;
+    border-radius: 25px;
+    border-color:#F4F4F4;
+    padding-left: 30px;
+  }
+
+  #todolist_location{
+    width: 70%;
+    height: 70px;
+    font-size: 40px;
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 30px;
+    margin-left: 115px;
+    justify-content: center;
+    background-color: #F4F4F4;
+    border-radius: 20px;
+    border-color:#F4F4F4;
+    padding-left: 30px;
+  }
+  
+  #todolist_date{
+    margin-left: 115px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    display: flex;
+  }
+
+  #todolist_date_month{
+    height: 50px;
+    font-size: 20px;
+    margin-right: 16px;
+    padding: 23px;
+    border-radius: 15px;
+    border: none;
+  }
+
+  #todolist_date_day{
+    height: 50px;
+    font-size: 20px;
+    margin-right: 16px;
+    padding: 23px;
+    border-radius: 15px;
+    border: none;
+  }
+
+  #todolist_date_year{
+    height: 50px;
+    font-size: 20px;
+    padding: 23px;
+    border-radius: 15px;
+    border: none;
+  }
+
+  #todolist_time{
+    margin-left: 115px;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+
+  #todolist_time_hour{
+    height: 50px;
+    margin-right: 16px;
+    font-size: 20px;
+    padding: 23px;
+    border-radius: 15px;
+    border: none;
+  }
+
+  #todolist_time_minute{
+    margin-left: 16px;
+    height: 50px;
+    font-size: 20px;
+    margin-right: 16px;
+    padding: 23px;
+    border-radius: 15px;
+    border: none;
+  }
+
+  #todolist_category{
+    width: 70%;
+    height: 70px;
+    font-size: 20px;
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 30px;
+    margin-left: 115px;
+    justify-content: center;
+    background-color: #F4F4F4;
+    border-radius: 20px;
+    border-color:#F4F4F4;
+    padding-left: 30px;
+  }
+
+  #todolist_categoryImportant{
+    width: 70%;
+    height: 70px;
+    font-size: 20px;
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 30px;
+    margin-left: 115px;
+    justify-content: center;
+    background-color: #F4F4F4;
+    border-radius: 20px;
+    border-color:#F4F4F4;
+    padding-left: 30px;
+  }
+
+  label{
+    margin-left: 125px;
+  }
+  .btn{
+    padding: 40px;
+    font-size: 50px;
+    background-color: #C68DFE;
+    width: 70%;
+    /* margin-right: 58px; */
+    border-radius: 40px;
+    border: none;
+  }
+
+  .guardar{
+    display: flex;
+    justify-content: center;
+    margin-top: 44px;
+    
+    
+  }
+
+  /* Fin SECTION NEW */
+
+ 
+
+  /* INICIO SHOW SECTION */
+
+  .table {
+    display: flex;
+    width: 100%;
+    padding-left: 77px;
+}
+
+  .tableTr{
+    display: flex;
+    margin-right: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 42px;
+    flex-direction: column;
+  }
+
+  .formulario2{
+        
+    font-size: 50px;
+    width: 100%;
+    height: 53vh;
+}
+
+.formulario-2 {
+    background-color: #CBE957;
+    opacity: 85%;
+    margin-left: 20px;
+    margin-right: 20px; 
+    border-radius: 15px;
+    padding-top: 100px;
+    padding-bottom: 90px; 
+    height: 100vh; 
+}
+
+.borrar{
+  background-color: transparent;
+  border: none;
+}
+
+.action-btn {
+    display: flex;
+    height: 133px;
+    justify-content: flex-end;
+    margin-left: 520px;
+}
+
+.edit-btn{
+    margin-right: 93px;
+}
+  /* Fin SHOW SECTION */
+
+  /* INICIO EDITAR */
+  
+.trash {
+  z-index: 100;
+  position: absolute;
+  justify-content: flex-end;
+  margin-left: 830px;
+  padding-top: 40px;
+}
+
+  /* FIN EDITAR */
+
+
+ /* Inicio SECTION HOME */
+
+ 
+  .table-home{
+    font-size: 40px;
+  }
+
+  .TitleCat {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 10px;
+  }
+
+  .verMas{
+    text-decoration: none;
+    font-size: 40px;
+    color: black;
+    opacity: 32%;
+  }
+
+  .cat-icons{
+    display: grid;
+    grid-template-columns: 5fr 5fr 5fr 5fr;
+    justify-items: center;
+  }
+
+  .icon-cat{
+    width: 185px
+  }
+
+  .card {
+    background-color: #FEB45C;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+  }
+
+  .botones-home{
+    display: flex;
+    justify-content: end;
+  }
+
+  .campo {
+    margin-left: 0;
+  }
+
+
+  .container, .container-md, .container-sm {
+    max-width: 720px;
+    font-size: 40px;
+  }
+
+  .categorias-head {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px 50px 30px;
+    align-items: center;
+  }
+
+  .tabla-task-row{
+    margin-left: 20px;
+    margin-right: 20px;
+  
+  }
+  .task {
+    display: flex;
+    flex-direction: column;
+    background-color: #FEB45C;
+    opacity: 100%;
+    height: 100px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    padding-top: 100px;
+    padding-bottom: 150px; 
+}
+
+.task-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 53px;
+}
+
+.table-home{
+  display: grid;
+  align-content: stretch;
+  align-items: center;
+  grid-template-rows: 1fr;
+}
+
+.tarea-titulo{
+  margin-left: 32px;
+}
+
+.more{
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* fin SECTION HOME */
+
+ /* Inicio SECTION EDIT*/
+ .form-Edit{
+  background-color: #FEB45C;
+}
+  /* Fin SECTION EDIT*/
+
+
+/* INICIO SECCION SHOW*/
+.show-icons{
+  display: flex;
+  justify-content: end;
+  padding-bottom: 25px;
+}
+
+.formulario-3 {
+  background-color: #CBE957;
+  opacity: 85%;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 15px;
+  padding-top: 35px;
+}
+
+.formulario3 {
+  font-size: 50px;
+}
+/* FIN SECCION SHOW */
+
+}
